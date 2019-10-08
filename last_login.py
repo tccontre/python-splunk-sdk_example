@@ -31,7 +31,7 @@ class QuickSearch:
             return service
         except:
             print("[+] splunk login authentication failure encounter\n\n")
-        
+        return
 
     def splunk_search(self, service):
         """
