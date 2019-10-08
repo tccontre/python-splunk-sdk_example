@@ -28,9 +28,10 @@ class QuickSearch:
                                  host = "localhost", # change this to ip address of machine where the splunk monitoring instance is located (remote splunk instance)
                                  port = 8089
                                      )
+            return service
         except:
             print("[+] splunk login authentication failure encounter\n\n")
-        return service
+        
 
     def splunk_search(self, service):
         """
